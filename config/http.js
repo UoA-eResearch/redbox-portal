@@ -1,3 +1,4 @@
+
 /**
  * HTTP Server Settings
  * (sails.config.http)
@@ -31,6 +32,10 @@ module.exports.http = {
      ***************************************************************************/
     passportInit: require('passport').initialize(),
     passportSession: require('passport').session(),
+    expressionSession: (function() {
+      //TODO: find a way to pull in existing session configuration so we can configure the session properly
+      return require('express-session')({ secret: 'keyboard cat', resave: true, saveUninitialized: true })
+    })(),
     brandingAndPortalAwareStaticRouter: function(req, res, next) {
       // Checks the branding and portal parameters if the resource isn't overidden for the required portal and branding,
       // it routes the request to the default location
@@ -89,7 +94,7 @@ module.exports.http = {
       'cacheControl',
       'startRequestTimer',
       'cookieParser',
-      'session',
+      'expressionSession',
       'passportInit',
       'passportSession',
       'myBodyParser',

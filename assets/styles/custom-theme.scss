@@ -1,1 +1,117 @@
-// Placeholder SCSS file customisations to the default theme.
+/* University of Auckland branding
+ * Conforming to https://styleguide.blogs.auckland.ac.nz
+ * Author: Luis Gracia <luis.gracia.valen@auckland.ac.nz> */
+
+/* Fonts */
+
+$national-font-base-url: "https://cdn.auckland.ac.nz/designs/uoa-digital/clientlibs/css/base/fonts/";
+@each $font in Bold, Book, BookItalic {
+    @font-face {
+        font-family: National#{$font};
+        src: url($national-font-base-url + "NationalWeb-#{$font}.eot");
+        src: url($national-font-base-url + "NationalWeb-#{$font}.woff2") format("woff2"),
+             url($national-font-base-url + "NationalWeb-#{$font}.woff") format("woff");
+    }
+}
+
+body {
+    color: $text-color;
+}
+
+/* Header user menu */
+
+.header-area {
+    color: $header-branding-link-color;
+    font-family: NationalBold, sans-serif;
+}
+
+.header-area a:hover  {
+    color: $header-branding-link-color;
+}
+
+.header-area .site-branding-area {
+    background-color: $header-branding-background-color;
+}
+
+/* Logo */
+
+// Reduce logo size
+div.logo img {
+  height: 50px
+}
+
+// Reduce empty space around logo
+.logo .h1, .logo h1 {
+    margin: 10px 0;
+}
+
+/* Home page */
+
+// Center dashboard link
+.default-page > .header > .main.container {
+    text-align: center;
+}
+
+// Center and space title
+.header h1#main-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Main navigation */
+
+// Keep background color of active menu item
+.mainmenu-area ul.navbar-nav li.site-branding-area a {
+    background-color: $site-branding-area-background;
+}
+
+/* Tab navigation */
+
+.nav-pills>li>a {
+    color: $tab-menu-inactive-color;
+    background-color: $tab-menu-inactive-background-color;
+}
+
+.nav-pills>li>a.active,.nav-pills>li>a.active:focus,.nav-pills>li>a.active:hover {
+    color: $tab-menu-active-color;
+    background-color: $tab-menu-active-background-color;
+}
+
+.nav-pills>li>a.active, .nav-pills>li>a.active:focus, .nav-pills>li>a.active:hover {
+    background-color: $tab-menu-active-background-color;
+}
+
+.nav-pills>li>a:focus, .nav-pills>li>a:hover {
+    color: $tab-menu-inactive-color-hover;
+    background-color: $tab-menu-inactive-background-color-hover;
+}
+
+/* Forms (Tabs) */
+
+// Form header
+.h3-header {
+    color: $branding-color-1;
+    font-family: NationalBold, sans-serif;
+}
+
+// Form validation
+.text-danger {
+    font-family: NationalBookItalic, sans-serif;
+}
+
+// Invert buttons on hover
+@each $name, $color in ("primary": $primary,
+                        "success": $success,
+                        "warning": $warning) {
+    .btn-#{$name}:hover {
+        color: $color;
+        background-color: $branding-color-3;
+        border-color: $color;
+    }
+}
+
+/* Footer */
+
+.footer-bottom-area a {
+  color: $footer-bottom-area-branding-color;
+}

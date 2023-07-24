@@ -1,1 +1,54 @@
-// Placeholder SCSS file customisations to the default theme.
+// Font config
+$branding-font-family: NationalBook, sans-serif;
+$branding-main-menu-font-family: NationalBook, sans-serif;
+$branding-footer-font-family: NationalBook, sans-serif;
+$branding-main-content-heading-font-family: NationalBold, sans-serif;
+
+$main-menu-branding-font-family: $branding-main-menu-font-family;
+$body-font-family: $branding-font-family;
+$footer-font-family: $branding-footer-font-family;
+$main-content-heading-font-family: $branding-main-content-heading-font-family;
+
+// Text
+$text-color: $branding-color-5;
+
+// Boostrap variables overrides
+$primary: $branding-color-2;
+
+// Header user menu
+$header-branding-link-color: $branding-color-3;
+$header-branding-background-color: $branding-color-2;
+
+// Logo
+$site-branding-area-background: $branding-color-3;
+$site-branding-area-heading-color: $branding-color-1;
+
+// Main navigation
+$main-menu-branding-background-color: $branding-color-4;
+$main-menu-active-item-color: $branding-color-2;
+$main-menu-active-item-background-color: $branding-color-3;
+$main-menu-inactive-item-color: $branding-color-1;
+
+$main-menu-inactive-item-color-hover: $main-menu-active-item-color;
+$main-menu-inactive-item-background-color-hover: $main-menu-active-item-background-color;
+$main-menu-inactive-item-background-color: $main-menu-active-item-background-color;
+$main-menu-inactive-dropdown-item-color: $main-menu-inactive-item-color;
+$main-menu-inactive-dropdown-item-color-hover: $main-menu-active-item-color;
+$main-menu-active-dropdown-item-color: $main-menu-inactive-item-color;
+$main-menu-active-dropdown-item-color-hover: $main-menu-active-item-color;
+$main-menu-active-dropdown-item-background-color-hover: $main-menu-active-item-background-color;
+$main-menu-selected-item-color: $main-menu-active-item-color;
+
+// Tab navigation
+$tab-menu-active-color: $branding-color-3;
+$tab-menu-inactive-color: $branding-color-2;
+$tab-menu-active-background-color: $tab-menu-inactive-color;
+$tab-menu-inactive-background-color: $tab-menu-active-color;
+$tab-menu-inactive-color-hover: $branding-color-1;
+$tab-menu-inactive-background-color-hover: $branding-color-4;
+
+// Dashboard panels
+$panel-branding-border-color: $branding-color-1;
+
+// Footer
+$footer-bottom-area-branding-background-color: $branding-color-10;

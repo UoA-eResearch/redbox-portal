@@ -54,7 +54,14 @@ div.logo img {
 
 // Center and space title
 .header h1#main-title {
-    margin-bottom: 20px;
+    color: $branding-color-1;
+    margin-bottom: 30px;
+}
+
+.header #sub-title {
+    padding-top: 10px;
+    font-size: 20px;
+}
 }
 
 /* Main navigation */

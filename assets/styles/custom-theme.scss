@@ -67,7 +67,7 @@ div.logo img {
   padding: 30px 0;
 }
 
-.default-page .main.container a {
+.default-page .main.container a[href$="/researcher/home"] {
     @extend .btn;
     @extend .btn-primary;
 }

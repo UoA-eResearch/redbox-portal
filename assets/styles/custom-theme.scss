@@ -122,7 +122,8 @@ h1,h2,h3,h4,h5,h6,
 // Invert buttons on hover
 @each $name, $color in ("primary": $primary,
                         "success": $success,
-                        "warning": $warning) {
+                        "warning": $warning,
+                        "info": $info) {
     .btn-#{$name}:hover {
         color: $color;
         background-color: $branding-color-3;

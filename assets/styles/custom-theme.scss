@@ -79,6 +79,11 @@ h1,h2,h3,h4,h5,h6,
     @extend .btn-primary;
 }
 
+/* Panels */
+.panel-default {
+    border-color: $branding-color-4;
+}
+
 /* Main navigation */
 
 // Keep background color of active menu item

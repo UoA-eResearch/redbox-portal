@@ -132,6 +132,39 @@ h1,h2,h3,h4,h5,h6,
     }
 }
 
+/* Project view */
+
+dmp-form[editmode="false"] .panel-body {
+    padding: 0 0 0 15px;
+}
+
+dmp-form[editmode="false"] .panel-title {
+    font-size: 20px;
+}
+
+dmp-form[editmode="false"] .h4 {
+    color: $text-color;
+    font-family: NationalBookItalic, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+dmp-form[editmode="false"] .h3-header {
+    background-color: $branding-color-4;
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+dmp-form[editmode="false"] .panel-body .key-value-pair, dmp-form[editmode="false"] .panel-body .view-contributor {
+    margin-top: 0;
+}
+
+dmp-form[editmode="false"] .key-value-pair > .key {
+    color: $branding-color-1;
+    margin-top: 10px;
+}
+
 /* Footer */
 
 .footer-bottom-area a {

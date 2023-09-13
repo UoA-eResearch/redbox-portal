@@ -143,14 +143,14 @@ dmp-form[editmode="false"] .panel-title {
 }
 
 dmp-form[editmode="false"] .h4 {
-    color: $text-color;
+    color: $text-color !important;
     font-family: NationalBookItalic, sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
 
 dmp-form[editmode="false"] .h3-header {
-    background-color: $branding-color-4;
+    background-color: $branding-color-4 !important;
     display: block;
     margin-top: 10px;
     font-size: 18px;
@@ -161,7 +161,7 @@ dmp-form[editmode="false"] .panel-body .key-value-pair, dmp-form[editmode="false
 }
 
 dmp-form[editmode="false"] .key-value-pair > .key {
-    color: $branding-color-1;
+    color: $branding-color-1 !important;
     margin-top: 10px;
 }
 

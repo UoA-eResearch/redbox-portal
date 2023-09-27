@@ -132,6 +132,24 @@ h1,h2,h3,h4,h5,h6,
     }
 }
 
+// Add/Remove buttons
+button.fa-plus-circle, button.fa-minus-circle {
+    font-size: 20px !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    &:hover {
+        color: var(--bs-btn-hover-color) !important;
+        background-color: var(--bs-btn-hover-bg) !important;
+        border-color: var(--bs-btn-hover-border-color) !important;
+    }
+}
+button.fa-plus-circle {
+    color: $success !important;
+}
+button.fa-minus-circle {
+    color: $danger !important;
+}
+
 /* Project view */
 
 dmp-form[editmode="false"] .panel-body {
